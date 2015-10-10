@@ -14,6 +14,7 @@ public class callStarter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	    if ( !GetComponent<AudioSource>().isPlaying && Input.GetMouseButtonDown(0)) {
+            Debug.Log("Input");
             GetComponent<AudioSource>().PlayOneShot(phoneSound);
         }
         
